@@ -320,6 +320,12 @@ h2 em{
   transition:color .2s,border-color .2s;
 }
 .proj-link:hover{color:var(--pink);border-color:var(--pink);}
+.proj-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.3rem;}
+.ptag{
+  font-size:.68rem;padding:.25rem .7rem;border-radius:999px;
+  background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.2);
+  color:var(--lavender);
+}
 
 /* ── EDUCATION ── */
 #education{background:var(--bg);}
@@ -464,7 +470,7 @@ footer{
       Developer.
     </h1>
     <p class="hero-sub">
-      Full Stack intern &amp; CSE student building real-world web apps, dashboards, and AI-powered tools. Passionate about clean code and beautiful UIs.
+      Aspiring software developer with hands-on internship experience in web development, dashboard development, and real-time application projects. Strong foundation in Core Java, Oracle SQL, Manual Testing, and modern web technologies.
     </p>
     <div class="hero-btns">
       <a href="#projects" class="btn-grad">View Projects ✦</a>
@@ -500,9 +506,10 @@ footer{
       <div class="skill-icon">☕</div>
       <div class="skill-title">Core Java</div>
       <div class="s-pills">
-        <span class="sp">OOP</span><span class="sp">Exception Handling</span>
-        <span class="sp">Collections</span><span class="sp">Multithreading</span>
-        <span class="sp">JDBC</span><span class="sp">Arrays & Strings</span>
+        <span class="sp">OOP Concepts</span><span class="sp">Exception Handling</span>
+        <span class="sp">Collections Framework</span><span class="sp">JDBC</span>
+        <span class="sp">Java 8 Features</span><span class="sp">Arrays & Strings</span>
+        <span class="sp">File Handling</span>
       </div>
     </div>
     <div class="skill-box">
@@ -510,7 +517,7 @@ footer{
       <div class="skill-title">Frontend</div>
       <div class="s-pills">
         <span class="sp">HTML5</span><span class="sp">CSS3</span>
-        <span class="sp">JavaScript</span><span class="sp">Responsive Design</span>
+        <span class="sp">JavaScript (Basic)</span><span class="sp">Responsive Design</span>
         <span class="sp">Netlify Deploy</span>
       </div>
     </div>
@@ -518,9 +525,10 @@ footer{
       <div class="skill-icon">🗄️</div>
       <div class="skill-title">Oracle SQL</div>
       <div class="s-pills">
-        <span class="sp">DDL / DML / TCL</span><span class="sp">Joins</span>
+        <span class="sp">DDL / DML / TCL / DCL</span><span class="sp">Joins</span>
         <span class="sp">Subqueries</span><span class="sp">Aggregate Functions</span>
         <span class="sp">Views</span><span class="sp">Constraints</span>
+        <span class="sp">Stored Procedures</span>
       </div>
     </div>
     <div class="skill-box">
@@ -528,7 +536,7 @@ footer{
       <div class="skill-title">Manual Testing</div>
       <div class="s-pills">
         <span class="sp">SDLC / STLC</span><span class="sp">Test Case Writing</span>
-        <span class="sp">Functional Testing</span><span class="sp">Regression</span>
+        <span class="sp">Functional Testing</span><span class="sp">Regression Testing</span>
         <span class="sp">Smoke Testing</span><span class="sp">Bug Life Cycle</span>
       </div>
     </div>
@@ -537,8 +545,8 @@ footer{
       <div class="skill-title">Tools & Platforms</div>
       <div class="s-pills">
         <span class="sp">Eclipse IDE</span><span class="sp">IntelliJ IDEA</span>
-        <span class="sp">VS Code</span><span class="sp">GitHub / Git</span>
-        <span class="sp">JIRA</span><span class="sp">Postman</span>
+        <span class="sp">VS Code</span><span class="sp">Git / GitHub</span>
+        <span class="sp">Postman</span><span class="sp">Netlify</span>
       </div>
     </div>
     <div class="skill-box">
@@ -546,7 +554,7 @@ footer{
       <div class="skill-title">OS & Environment</div>
       <div class="s-pills">
         <span class="sp">Windows</span><span class="sp">Linux</span>
-        <span class="sp">MySQL Workbench</span><span class="sp">Oracle SQL Dev</span>
+        <span class="sp">Oracle SQL Developer</span><span class="sp">MySQL Workbench</span>
       </div>
     </div>
   </div>
@@ -564,7 +572,7 @@ footer{
         <div class="exp-role">Full Stack Development Intern</div>
         <div class="exp-co">Nitroware Technologies Private Limited</div>
         <div class="exp-desc">
-          Developed responsive web pages and implemented frontend features using HTML, CSS, and JavaScript. Performed debugging and assisted in deployment. Followed structured workflows from requirements through design, testing, and live deployment via GitHub and Netlify.
+          Developed responsive web pages and implemented frontend features using HTML, CSS, and JavaScript. Performed debugging and assisted in deployment. Followed the full project workflow — requirement understanding, design implementation, testing, debugging, and deployment via GitHub and Netlify — to gain practical exposure to real-time web development.
         </div>
         <div class="exp-tags">
           <span class="etag">HTML/CSS/JS</span>
@@ -582,7 +590,7 @@ footer{
         <div class="exp-role">Dashboard Development Intern</div>
         <div class="exp-co">ProFuture Tech Solutions Pvt Ltd</div>
         <div class="exp-desc">
-          Worked on dashboard feature integration, UI improvements, testing, and module support for mobile application development. Participated in requirement collection, module planning, feature development, testing, and the full deployment workflow.
+          Worked on dashboard feature integration, UI improvements, testing, and module support for mobile application development. Involved in requirement collection, module planning, feature development, testing, and the full deployment workflow — gaining experience in real-time project development and teamwork in a professional environment.
         </div>
         <div class="exp-tags">
           <span class="etag">Dashboard Dev</span>
@@ -602,20 +610,29 @@ footer{
   <div class="proj-grid">
     <div class="proj-card">
       <div class="proj-num">01</div>
-      <div class="proj-title">Mock Interview App</div>
-      <p class="proj-desc">A real-time AI-powered mock interview platform built for serious interview preparation.</p>
+      <div class="proj-title">Thyroid Disease Detection Using ML</div>
+      <p class="proj-desc">A machine learning system that analyzes patient health records to predict thyroid disorders and present clear, readable results.</p>
+      <div class="proj-tags">
+        <span class="ptag">Machine Learning</span>
+        <span class="ptag">Data Cleaning</span>
+        <span class="ptag">Healthcare</span>
+      </div>
       <ul class="proj-ul">
-        <li>AI-based dynamic question generation</li>
-        <li>Built-in countdown timer for realistic sessions</li>
-        <li>Instant performance feedback system</li>
-        <li>Polished UI with smooth user experience</li>
+        <li>Collected and cleaned thyroid disease data, preparing patient health records for analysis</li>
+        <li>Trained an ML model to predict thyroid disorders from medical parameters</li>
+        <li>Built a user-friendly interface for entering patient details and viewing prediction reports</li>
       </ul>
-      <a href="#" class="proj-link">Live Demo ↗</a>
+      <a href="#" class="proj-link">View Project ↗</a>
     </div>
     <div class="proj-card">
       <div class="proj-num">02</div>
       <div class="proj-title">Portfolio Website</div>
       <p class="proj-desc">Personal portfolio designed and built from scratch to showcase work, skills, and background.</p>
+      <div class="proj-tags">
+        <span class="ptag">HTML</span>
+        <span class="ptag">CSS</span>
+        <span class="ptag">JavaScript</span>
+      </div>
       <ul class="proj-ul">
         <li>Fully responsive across all screen sizes</li>
         <li>Sections: About, Education, Projects, Contact</li>
@@ -642,7 +659,7 @@ footer{
       <div class="edu-yr">2022</div>
       <div class="edu-deg">Class 12th</div>
       <div class="edu-inst">State Board</div>
-      <div class="edu-score">📋 Score: 65%</div>
+      <div class="edu-score">📋 Score: 61%</div>
     </div>
     <div class="edu-card">
       <div class="edu-yr">2020</div>
@@ -664,10 +681,6 @@ footer{
       <div class="ach-desc">
         Qualified the nationally recognized TCS iON NQT in December 2025. Demonstrated strong aptitude across Numerical Ability, Verbal Ability, and Reasoning Ability — assessed by TCS iON at a national scale.
       </div>
-     <embed src="TCS certificate.pdf" type="application/pdf" width="100%" height="600px">
-    <p>Score card.
-    <a href="sample.pdf">Download PDF</a>.</p>
-</object>
       <div class="ach-badge">✦ 60.09% Overall Score</div>
     </div>
   </div>
@@ -680,7 +693,7 @@ footer{
     <h2>Let's <em>connect</em></h2>
     <p>Open to internships, full-time roles & exciting projects.</p>
     <p>Drop a message anytime — I'd love to hear from you!</p>
-    <a href="mailto:rranushasri@gmail.com" class="contact-email">ranushasrikv@gmail.com</a>
+    <a href="mailto:rranushasri@gmail.com" class="contact-email">rranushasri@gmail.com</a>
     <div class="c-links">
       <a href="https://github.com/Ranushasri" class="c-link" target="_blank">⌘ GitHub</a>
       <a href="https://www.linkedin.com/in/ranushasri-k-v-90b9a02a1/" class="c-link" target="_blank">in LinkedIn</a>
